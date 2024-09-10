@@ -14,3 +14,8 @@ WITHOUT_AUTH = "You should be authorised" #Если выполнить запр�
 
 correct_ingredients_for_order_creation = {"ingredients": ["61c0c5a71d1f82001bdaaa6d","61c0c5a71d1f82001bdaaa75"]} #Существующие элементы для создания бургера
 incorrect_ingredients_for_order_creation = {"ingredients": ["spicybun123","sweetgalacticalsauce9021"]} #Несуществующие элементы для создания бургера
+
+test_user_data_update_without_auth = [
+    {"email": "non-existingemail123@yandex.com", "name": "diplom2yandex08", "password": "12345678ayandex08"},
+    {"email": "testfail12390yandex@gmail.com", "name": "yandx932902", "password": "veg92ii01ga"}
+]

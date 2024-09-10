@@ -25,10 +25,7 @@ class TestUserDataUpdate:
 
     @allure.title('Изменение данных пользователя без авторизации')
     @allure.description('Проверяем код статуса и ошибку, после изменение данных пользователя без авторизации')
-    @pytest.mark.parametrize("new_data", [
-        {"email": "non-existingemail123@yandex.com", "name": "diplom2yandex08", "password": "12345678ayandex08"},
-        {"email": "testfail12390yandex@gmail.com", "name": "yandx932902", "password": "veg92ii01ga"}
-    ])
+    @pytest.mark.parametrize("new_data", data_for_tests.test_user_data_update_without_auth)
     def test_update_user_data_without_auth(self, new_data):
         response = requests.patch(data_for_tests.URL_USER_DATA_UPDATE, json=new_data)
 
